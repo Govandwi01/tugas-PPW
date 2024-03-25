@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "manrope", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsla(217, 19%, 35%, 0.105);
+}
+section {
+    border-radius: 20px;
+    position: relative;
+    width: 336px;
+    background-color: white;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 15px;
+}
+.article {
+    margin: 32px;
+}
+.drawer {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* margin-top: 100px !important; */
+    width: 100%;
+    height: 100%;
+}
+.woman-profile {
+    width: 48px; 
+    border-radius: 50%;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px; 
+    height: 65px; 
+  }
+.info {
+    margin-left: 16px; 
+  }
+button {
+    border-radius: 50%;
+    width: 32px; 
+    height: 33.6px; 
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+}
+.container {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transition: opacity 0.4s ease-in-out;
+    background-color: hsl(217, 19%, 30%);
+    display: none;
+    flex-direction: row;
+    height: 97.6px; 
+    align-items: center;
+    padding: 16px; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container p {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.874);
+    letter-spacing: 4.8px; 
+    font-size: 14.4px; 
+    margin: 0;
+    margin-right: 16px; 
+}
+.container button {
+    width: 32px; 
+    height: 32px; 
+    margin-left: auto;
+}
+  
+.icons img {
+    width: 24px; 
+    height: 24px; 
+}
+  
+.icons {
+    display: flex;
+    gap: 16px; 
+}
+  
+span {
+    display: none;
+}
+@media screen  and (min-width: 1200px) {
+    .drawer {
+        width: 16rem;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+
+    }
+    .container {
+        border-radius: 5px;
+        width: 160px;
+        height: 32px;
+        margin-left: 520px;
+        margin-right: 100px;
+        background-color: hsla(217, 19%, 35%, 0.849);
+    }
+    .container p {
+        font-size: 8px; 
+    }
+    span {
+        display: block;
+        transform: translate(-63px, 20px);
+        color: hsla(217, 19%, 30%, 0.92);
+    }
+    .icons {
+        gap: 8px; 
+    }
+    .icons img {
+        width: 12.8px;
+        height: 12.8px; 
+    }
+    .container button {
+        display: none;
+    }
+    section {
+        border-radius: 20px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    main {
+        width: 640px; 
+        height: auto;
+    }
+    h1,
+    p,
+    .about,
+    .article {
+        margin: 0;
+    }
+    .article {
+        padding: 28.8px;
+    }
+    
+    h1 {
+        font-size: 17.6px;
+        margin-bottom: 8px;
+    }
+    
+    p {
+        font-size: 11.2px; 
+        line-height: 19.2px; 
+        margin-bottom: 8px; 
+    }
+    
+      .woman-profile {
+        width: 48px; 
+    }
+    
+      .info strong {
+        font-size: 11.2px; 
+    }
+    
+      .info p {
+        font-size: 9.6px; 
+    } 
+
+}
